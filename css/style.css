@@ -1,0 +1,64 @@
+body {
+  margin: 0 auto;
+  background: #e8f5e5b7;
+}
+
+body header {
+  width: 100wv;
+  height: 260px;
+  background: #5A4999;
+  color: #ffffffff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body header .img-microscope, body header .img-qrma {
+  width: 200px;
+  height: 120px;
+  margin: 30px 30px 0 30px;
+  border: 1px  black outset;
+  border-radius: 8px;
+  box-shadow: 7px 7px 12px 2px #242424;
+  float: left;
+}
+
+body header .img-qrma {
+  float: right;
+}
+
+body header .title {
+  display: inline-block;
+}
+
+body header .title a {
+  text-decoration: none;
+  color: #ffffffff;
+}
+
+body header nav {
+  width: 100vw;
+  margin: 12px 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+body header nav button {
+  width: 20vw;
+  float: left;
+  height: 50px;
+  padding: 8px 0;
+  cursor: pointer;
+  background: #9fd1a8;
+  border: none;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+body header nav button:hover {
+  background: #7ebd7e;
+  border-top: 3px solid #000000;
+  border-radius: 10px 10px 0 0;
+  transition-property: border-top border-radius;
+  transition-duration: 0.2s;
+}
+/*# sourceMappingURL=style.css.map */
