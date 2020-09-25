@@ -20,13 +20,71 @@
             <img src="./images/quantum.jpg" alt="urządzenie do biorezonansu" class="img-qrma">
             
             <nav>
-                <button>Analiza kropli krwi</button>
-                <button>Analiza - Quantum</button>
-                <button>Cennik</button>
-                <button>O nas</button>
-                <button>Kontakt</button>
+                <button onclick="clickButton('analyst-health')" class="button-menu">Analiza kropli krwi</button>
+                <button onclick="clickButton('quantum')" class="button-menu">Analiza - Quantum</button>
+                <button onclick="clickButton('price')" class="button-menu">Cennik</button>
+                <button onclick="clickButton('about')" class="button-menu">O nas</button>
+                <button onclick="clickButton('contact')" class="button-menu">Kontakt</button>
             </nav>
         </header>
-        <script src="js/script.js"></script>
+        
+        <section>
+            <article id="about" class="about active">
+                <p>
+                    Jesteśmy pozytywnie zakręconymi ludźmi, którzy głęboko wierzą w to,
+                    że mimo iż siła jednostki często jest niedoceniana a naprawdę warto pomagać innym i tym samym,
+                     chociaż w małym procencie, zmieniają świat na lepsze.
+                      Z troską podchodzimy do ludzkich problemów dnia codziennego i wiemy, 
+                      jak ważne w życiu każdego jest zdrowie, dlatego też oferujemy usługi z zakresu 
+                      <b> Mikroskopowego Badania żywej Kropli Krwi</b> oraz <b>biorezonansu magnetycznego.</b>
+                       Techniki te pozwalają nam bowiem określić 
+                       stan organizmu i wskazać osobom poddanym badaniom dobrą drogę do poprawy zdrowia,
+                        jeżeli tylko takiej poprawy potrzebują.</p>
+
+                <p>Ukończyliśmy kurs podstawowy i <B>zaawansowany</B> w zakresie Mikroskopowego Badania żywej Kropli Krwi według profesora, doktora Gunthera Enderleina. Odbyte szkolenia i zdobyta dzięki nim wiedza, poparta odpowiednimi certyfikatami, uczyniły z nas <b>techników analityki medycznej</b> o nr zawodu 321201 (według Rozporządzenia Ministerstwa Pracy i Polityki Społecznej z dnia 7 sierpnia 2014 roku Dz.U. z 2014 roku, poz. 1145). Stosowane przez nas techniki są zresztą doskonałym uzupełnieniem dla tradycyjnych badań krwi, wykonywanych w laboratoriach medycznych.</p>
+        
+                <p><b>Jesteśmy osobami uczciwymi.</b> Bardzo cenimy sobie zaufanie, jakim obdarzają nas inni. Oferujemy usługi na wysokim poziomie, podparte uzyskaną przez nas wiedzą teoretyczną, jak i tą zdobytą w toku przeprowadzanych przez nas badań.</p>
+        
+                <p>Z przykrością odnotowujemy na rynku obecność osób niekompetentnych, nieodpowiednio przygotowanych do przeprowadzania analizy obrazu krwi, działających tym samym na szkodę ludzi, którzy oddali w ich ręce swoje zdrowie i samopoczucie. <b>Sami zawsze przed takimi osobami przestrzegamy i uczulamy innych na to, aby sprawdzali oni wiarygodność specjalistów, w których ręce chcą się oddać</b>. Jak można to uczynić? Odpowiedź jest bardzo prosta. Wystarczy przed poddaniem się badaniu poprosić o okazanie certyfikatów potwierdzających kompetencje danej osoby.<b> Sami ZAWSZE przed pierwszym badaniem określonego klienta swoje certyfikaty okazujemy.</b> Chcemy, aby każda osoba korzystająca z naszych usług była spokojna o nasze kompetencje i pewna, że przeprowadzane przez nas analizy są profesjonalne.</p>
+        
+                <p>Nasze doświadczenie, jak i indywidualne podejście do klienta pozwalają na bezstresowe wykonanie analiz na wysokim poziomie. Zawsze staramy się o przyjazną atmosferę podczas świadczenia usług. <b>Komfort pacjentów jest dla nas priorytetem.</b> Ze szczególną ostrożnością podchodzimy do dzieci, które często nie są jeszcze oswojone z wszelkimi badaniami i niejednokrotnie nie zdają sobie sprawy, dlaczego i w jaki sposób zostaną one przeprowadzone.</p>
+        
+                <p>Prywatnie jesteśmy ludźmi o szerokim polu zainteresowań. Dbamy nie tylko o zdrowie ludzi, ale także i zwierząt, a szczególnie bliskie są nam szynszyle. To właśnie miłość do nich stała się inspiracją do powołania przez nas internetowego sklepu dla królików i gryzoni <a href="https://www.elzonik.pl" class="button"> Elzonik.pl</a>, oferującego mnóstwo zdrowych i pełnowartościowych produktów dla naszych braci mniejszych.</p>
+        
+                <p>Ponadto niezwykle cenimy sobie ciepło domowego ogniska, którym jak wiadomo w pełni można cieszyć się, kiedy dobre samopoczucie dopisuje, a te najpiękniejsze, ale niestety ulotne chwile chętnie dokumentujemy na zdjęciach, aby w każdym momencie życia móc do nich powracać. Czasami chodzimy z głową w chmurach i to niemal dosłownie, bo oprócz tego, że lubimy marzyć i wierzymy, że marzenia się spełniają, interesujemy się także lotnictwem. Cenimy też dobre książki, nie tylko te z literatury fachowej. Lubimy budować wartościowe relacje z ludźmi, dlatego też cenimy pracę z klientami.
+            </article>
+
+            <article class='price active'>
+                <h1>Cennik</h1>
+                <ul>
+                    <li>Mikroskopowe Badanie żywej Kropli Krwi (wraz z kompleksową prezentacją analizowanego obrazu krwi) - 120 zł.</li>
+                    <li>Analiza organizmu urządzeniem Quantum - 70 zł.</li>
+                    <li>Pełny pakiet: Badanie kropli krwi + Quantum - 150 zł.</li>	
+                </ul>
+            Bezpłatny dojazd na terenie Wrocławia i Bielan Wrocławskich.
+            <br>
+            Dojazd na terenie Dolnego Śląska (poza terenem bezpłatnego dojazdu):
+            <br>
+            <ul>
+                <li>możliwy w przypadku co najmniej dwóch osób do badania, pozostających na czas badania pod jednym adresem,</li>
+                <li>płatny 40 groszy za każdy przejechany kilometr poza granicami Wrocławia a w przypadku większej ilości osób do badania (minimum 4 osoby) możliwa negocjacja ceny dojazdu*.</li>
+            </ul><br>
+            * O finalnych kosztach dojazdu klient informowany jest zaraz po ich obliczeniu.
+            Jesteśmy legalnie działającą firmą. Rozliczamy się z usług, które świadczymy na rzecz naszych klientów. Wystawiamy dowody zakupu. <br><br><br>
+            </article>
+
+            <article>
+                
+            </article>
+
+            <article>
+                
+            </article>
+
+            <article>
+                
+            </article>
+        </section>
+        <script src="./js/script.js"></script>
     </body>
 </html>

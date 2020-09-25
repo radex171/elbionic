@@ -1,3 +1,7 @@
+.active {
+  display: inline-block;
+}
+
 body {
   margin: 0 auto;
   background: #e8f5e5b7;
@@ -52,6 +56,7 @@ body header nav button {
   border: none;
   font-weight: bolder;
   font-size: 16px;
+  transition-duration: 0.2s;
 }
 
 body header nav button:hover {
@@ -60,5 +65,11 @@ body header nav button:hover {
   border-radius: 10px 10px 0 0;
   transition-property: border-top border-radius;
   transition-duration: 0.2s;
+}
+
+body article {
+  display: none;
+  transition-duration: 1s;
+  transition-delay: 1s;
 }
 /*# sourceMappingURL=style.css.map */
