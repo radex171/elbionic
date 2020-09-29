@@ -1,10 +1,10 @@
 .active {
-  display: inline-block;
+  display: block;
 }
 
 body {
   margin: 0 auto;
-  background: #e8f5e5b7;
+  background: #f5f8f5b7;
 }
 
 body header {
@@ -63,13 +63,15 @@ body header nav button:hover {
   background: #7ebd7e;
   border-top: 3px solid #000000;
   border-radius: 10px 10px 0 0;
-  transition-property: border-top border-radius;
+  transition-property: all;
   transition-duration: 0.2s;
 }
 
 body article {
   display: none;
-  transition-duration: 1s;
-  transition-delay: 1s;
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */

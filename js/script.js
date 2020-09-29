@@ -14,6 +14,6 @@ function clickButton(prop){
 
         findArticle.classList.add('active');
         
-        setTimeout(300)
+        
 };
 

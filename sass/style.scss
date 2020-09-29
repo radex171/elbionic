@@ -4,14 +4,12 @@ $black: #000000;
 $grey: #242424;
 $green: #9fd1a8;
 $dark-green: #7ebd7e;
-$light-violet: #e8f5e5b7;
+$light-violet: #f5f8f5b7;
 
-.active{
- 
-    display: inline-block;
-    
-   
+.active {
+display: block;
 }
+
 
 
 body {
@@ -72,17 +70,26 @@ body {
                     background: $dark-green;
                     border-top: 3px solid $black;
                     border-radius: 10px 10px 0 0;
-                    transition-property: border-top border-radius;
+                    transition-property: all;
                     transition-duration: 0.2s;
                 }
+                
             }
+
+            
         }
     }
 
+  
     article {
         display: none;
-        transition-duration: 1s;
-        transition-delay: 1s;
+        width: 80vw;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 20px;
     }
+   
 
+    
+   
 }
