@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="PL -pl">
+<html lang="pl">
     <head>
         <meta charset="utf-8">
         <title>Elbionic - analiza stanu zdrowia</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     </head>
     <body>
         <header>
@@ -20,11 +21,11 @@
             <img src="./images/quantum.jpg" alt="urządzenie do biorezonansu" class="img-qrma">
             
             <nav>
-                <button onclick="clickButton('analyst-health')" class="button-menu">Analiza kropli krwi</button>
-                <button onclick="clickButton('quantum')" class="button-menu">Analiza - Quantum</button>
-                <button onclick="clickButton('price')" class="button-menu">Cennik</button>
-                <button onclick="clickButton('about')" class="button-menu">O nas</button>
-                <button onclick="clickButton('contact')" class="button-menu">Kontakt</button>
+                <button type="button" onclick="clickButton('analyst-health')" class="button-menu">Analiza kropli krwi</button>
+                <button type="button" onclick="clickButton('quantum')" class="button-menu">Analiza - Quantum</button>
+                <button type="button" onclick="clickButton('price')" class="button-menu">Cennik</button>
+                <button type="button" onclick="clickButton('about')" class="button-menu">O nas</button>
+                <button type="button" onclick="clickButton('contact')" class="button-menu">Kontakt</button>
             </nav>
         </header>
         
@@ -71,7 +72,7 @@
                     kiedy dobre samopoczucie dopisuje, a te najpiękniejsze, ale niestety ulotne chwile chętnie dokumentujemy na zdjęciach, 
                     aby w każdym momencie życia móc do nich powracać. Czasami chodzimy z głową w chmurach i to niemal dosłownie, 
                     bo oprócz tego, że lubimy marzyć i wierzymy, że marzenia się spełniają, interesujemy się także lotnictwem. Cenimy też dobre książki, 
-                    nie tylko te z literatury fachowej. Lubimy budować wartościowe relacje z ludźmi, dlatego też cenimy pracę z klientami.
+                    nie tylko te z literatury fachowej. Lubimy budować wartościowe relacje z ludźmi, dlatego też cenimy pracę z klientami.</p>
             </article>
 
             <article class='price'>
@@ -119,14 +120,17 @@
                         
                     </li>
                     </li>
-                </ol><br>
-                <div id="SlideShow2" style="position: relative; text-align: center; margin: 0px auto; width: 560px; height: 600px; z-index: 2;  box-shadow: black 10px 10px 20px 5px">
-                    <img class="image" src="img/quantum-1.jpg ">
-                    <img class="image" src="img/quantum-2.jpg ">
-                    <img class="image" src="img/quantum-3.jpg" >
-                    <img class="image" src="img/quantum-4.jpg" >
+                </ol>
+                <br>
+
+                <div class='carousel-gallery'>
+                    <img class="image" src="images/quantum-1.jpg " alt="quantum resonane magnetic analyser">
+                    <img class="image" src="images/quantum-2.jpg " alt="quantum resonane magnetic analyser">
+                    <img class="image" src="images/quantum-3.jpg"  alt="quantum resonane magnetic analyser">
+                    <img class="image" src="images/quantum-4.jpg"  alt="quantum resonane magnetic analyser">
                     
-                </div></br><br>
+                </div>
+                <br><br>
                     <b>Ponadto</b> w trakcie rezonansu mogą Państwo także uzyskać obraz <b>stanu ogólnego swojej skóry</b>, 
                     jak również informacje na temat występujących w organizmie <b>witamin i mikroelementów</b>,<br> 
                     ale także mogących się w nim znajdować <b>metali ciężkich.</b><br><br>
@@ -150,9 +154,9 @@
                     w którym przedstawiane są przeciwwskazania eliminujące moĹźliwość jego wykonania, 
                     a osoba poddająca się badaniu zobowiązana jest do podpisania pisma o braku występowania tych przeciwwskazań.<br><br>
         
-                    <b>Do przeciwwskazań należąw tym przypadku m.in. metalowe ciała znajdujące się wewnątrz organizmu, 
+                    <b class="red">Do przeciwwskazań należą w tym przypadku m.in. metalowe ciała znajdujące się wewnątrz organizmu, 
                     których nie można usunąć na czas biorezonansu (implanty, rozruszniki, opiłki metali), ciężkie zaburzenia rytmu serca, jak również ciąża.</b><br><br>
-                 </article>
+            </article>
 
             <article class='analyst-health'>
                 <h1>Mikroskopowa analiza żywej kropli krwi</h1>
@@ -172,22 +176,34 @@
                     <li><b>kryształy soli fosforanowo-wapniowych</b></li>
                     <li><a href="http://elzonik.pl/suplementy-diety-nsp/501-cholester-reg-90-kapsulek.html" style="color: black"> <b>cholestrol LDL i HDL</b></a></li>
                 </ul>
+
                 <br><br>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/lAySJUEZhQY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br></br></br>
 
-                <div class='carousel-gallery'>
-                    <img class="image" src="images/artefakt.jpg">
-                    <img class="image" src="images/bialko-pasozyta.jpg">
-                    <img class="image" src="images/bialko-pokarmowe.jpg" >
-                    <img class="image" src="images/krwinki.jpg">
-                    <img class="image" src="images/krysztaly-moczowe.jpg" >
-                    <img class="image" src="images/leukocyty.jpg" >
-                    <img class="image" src="images/struktura-bialkowa-pasozyta.jpg">
-                    <img class="image" src="images/uszkodzenia-wolnorodnikowe.jpg" >
-                    <img class="image" src="images/uszkodzenia-wolnorodnikowe-2.jpg">
-                    </div></br><br>
+                <iframe
+                    title="badanie kropli krwi"
+                    class="videoPlayer" 
+                    width="560" height="315" 
+                    src="https://www.youtube.com/embed/lAySJUEZhQY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
 
-                jak również ocenić:
+                <br><br><br>
+
+                    <div class='carousel-gallery'>
+                        <img class="image" src="images/artefakt.jpg" alt="zdjęcie krwi pod mikroskopem">
+                        <img class="image" src="images/bialko-pasozyta.jpg" alt="zdjęcie krwi pod mikroskopem">
+                        <img class="image" src="images/bialko-pokarmowe.jpg" alt="zdjęcie krwi pod mikroskopem">
+                        <img class="image" src="images/krwinki.jpg" alt="zdjęcie krwi pod mikroskopem">
+                        <img class="image" src="images/krysztaly-moczowe.jpg" alt="zdjęcie krwi pod mikroskopem">
+                        <img class="image" src="images/leukocyty.jpg" alt="zdjęcie krwi pod mikroskopem">
+                        <img class="image" src="images/struktura-bialkowa-pasozyta.jpg" alt="zdjęcie krwi pod mikroskopem">
+                        <img class="image" src="images/uszkodzenia-wolnorodnikowe.jpg" alt="zdjęcie krwi pod mikroskopem">
+                        <img class="image" src="images/uszkodzenia-wolnorodnikowe-2.jpg" alt="zdjęcie krwi pod mikroskopem"> 
+                    </div>
+                    <br><br>
+                
+                jak również ocenić:<br>
                 <ul>
                     <li>uszkodzenia erytrocytów (czyli czerwonych krwinek)</li>
                     <li>agregację i rulonizację erytrocytów,</li>
@@ -195,7 +211,9 @@
                     <li>występowanie w organizmie niedoborów mineralnych (UWAGA! szczegółowy obraz tego, jakich witamin i minerałów brakuje w organizmie można uzyskać już podczas tej samej wizyty, jeśli zdecyduje się na analizę urządzeniem Quantum),</li>
                     <li>występowanie zaburzeń hormonalnych,</li>
                     <li>kondycję leukocytów (czyli krwinek białych), które są odpowiedzialne za funkcjonowanie układu odpornościowego.</li>
-                </ul><br>
+                </ul>
+                <br>
+
                 Badanie jest niemal bezbolesne i polega na pobraniu kropli krwi z palca przy użyciu takich samych nakłuwaczy jak przy badaniu poziomu cukru. 
                 Oczywiście wszelkie materiały potrzebne nam do wykonania takiego nakłucia są jednorazowe i sterylne w dbałości o zdrowie i dobro klienta.<br>
 
@@ -207,7 +225,7 @@
                 Staramy się, aby nasze analizy były jak najbardziej kompleksowe w związku z czym nie przestrzegamy rygorystycznie podanych ram czasowych a raczej są one orientacyjne. 
                 W trakcie analizy przeprowadzamy rozmowę na temat stanu badanego organizmu oraz wyjaśniamy na bieżąco zauważone zjawiska.<br><br>
 
-                <b>Zastrzegamy prawo do odmowy wykonania analizy kropli krwi osobom cierpiącym na hemofilię czy mającym problemy z krzepliwością krwi.</b><br><br>
+                <b class="red">Zastrzegamy prawo do odmowy wykonania analizy kropli krwi osobom cierpiącym na hemofilię czy mającym problemy z krzepliwością krwi.</b><br><br>
 
                 Jak dobrze i kompleksowo przygotować się do badania?<br>
                 <ul>
@@ -227,24 +245,30 @@
                 Dokładamy wszelkich starań, aby dziecko czuło się komfortowo przez cały czas trwania analizy, 
                 jednocześnie zaciekawiając je opowieścią na temat roli krwi w organizmie. 
                 Przez cały czas trwania badania odpowiadamy na wszelkie pytania dzieci i rodziców oraz ewentualne wątpliwości, które w trakcie jego przeprowadzania się pojawią.<br><br>
-
                 Po pierwszej takiej wizycie dziecko jest już spokojniejsze jak i podczas kolejnych i niejednokrotnie z chęcią i zaciekawieniem obserwuje własny obraz krwi.<br><br>
-
                 Oczywiście istnieje możliwość wykonania nakłucia przez rodziców dziecka bądź jego prawnych opiekunów.<br><br>
-
                 Przygotowanie do badania w przypadku dzieci jest takie samo, jak w przypadku osób dorosłych.<br>
-	
             </article>
 
             <article class='contact'>
                 <h1>Kontakt</h1>
 
-
                 <b> tel. 787-611-929<br>
-                adres e-mail: <a href="mailto" style="color: black">elbionic@wp.pl</a></b><br><br> 
+                adres e-mail: <a href="mailto" class="black">elbionic@wp.pl</a></b><br><br> 
                 godziny analiz ustalane są po wcześniejszym kontakcie telefonicznym<br><br><br>
             </article>
         </section>
+
+        <footer>
+            Elbionic - analiza stanu zdrowia - tel. 787-611-929<br>email: <a href=" mailto: elbionic@wp.pl">elbionic@wp.pl</a><br><br>
+            create: radex171 (radex171@gmail.com)
+        </footer>
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-3.3.0.min.js"></script>
+        <script type="text/javascript" src="./js/slick.min.js"></script>
+        
         <script src="./js/script.js"></script>
+
     </body>
 </html>

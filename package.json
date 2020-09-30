@@ -10,7 +10,7 @@
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "test": "npm run test:html",
     "test:html": "html-validate *.html",
-    "build": "npm-run-all build:* test",
+    "build": "npm-run-all build:*",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev": "npm-run-all build-dev:sass build:autoprefixer",
