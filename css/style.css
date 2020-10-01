@@ -288,25 +288,34 @@ a {
   color: #000000;
 }
 
+.blue {
+  color: #0e0aee;
+}
+
 body {
   margin: 0 auto;
   padding: 0;
   background: #f5f8f5b7;
+  background: url("../images/blood.png");
+  background-size: cover;
+  font-weight: 600;
+  font-family: 'Lora', serif;
 }
 
 body header {
   width: 100wv;
-  height: 260px;
+  height: 200px;
   background: #5A4999;
   color: #ffffffff;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 
 body header .img-microscope, body header .img-qrma {
   width: 200px;
   height: 120px;
-  margin: 30px 30px 0 30px;
+  margin: 20px 30px 0 30px;
   border: 1px  black outset;
   border-radius: 8px;
   box-shadow: 7px 7px 12px 2px #242424;
@@ -319,19 +328,22 @@ body header .img-qrma {
 
 body header .title {
   display: inline-block;
+  line-height: 15px;
 }
 
 body header nav {
   width: 100%;
-  margin: 12px 0;
   margin-bottom: 0;
   padding: 0;
+  float: left;
+  position: absolute;
+  bottom: 0;
 }
 
 body header nav button {
   width: 20%;
   float: left;
-  height: 50px;
+  height: 40px;
   padding: 0;
   cursor: pointer;
   background: #9fd1a8;
@@ -339,6 +351,7 @@ body header nav button {
   font-weight: bolder;
   font-size: 16px;
   transition-duration: 0.2s;
+  font-size: 12px;
 }
 
 body header nav button:hover {
@@ -352,7 +365,7 @@ body header nav button:hover {
 body article {
   display: none;
   max-width: 80vw;
-  margin: 0 auto;
+  margin: 10px auto;
   text-align: center;
   font-size: 20px;
   margin-bottom: 160px;
@@ -361,6 +374,7 @@ body article {
 
 body article .carousel-gallery {
   width: 60%;
+  height: auto;
   margin: 0 auto;
   padding: 5px;
   box-shadow: 10px 10px 26px 2px black;
@@ -375,7 +389,7 @@ body footer {
   background-color: #5A4999;
   color: #ffffffff;
   text-align: center;
-  padding: 10px 0;
+  padding: 5px 0;
   position: fixed;
   bottom: 0;
 }

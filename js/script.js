@@ -6,7 +6,7 @@ $(document).ready(function(){
       autoplaySpeed: 2000,
       arrows: false,
       touchThreshold: 2,
-
+      adaptiveHeight: true,
     });
   });
   
